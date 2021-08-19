@@ -23,7 +23,7 @@ mongoose.connect(
     } else {
       console.log("Connection to database successful");
     }
-    app.listen(5000, function () {
+    app.listen(process.env.PORT || 5000, function () {
       console.log("Server started at 5000");
     });
   }
